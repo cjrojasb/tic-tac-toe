@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Button from '@material-ui/core/Button';
 import './index.css';
 
 // Branch Develop
@@ -19,9 +20,14 @@ import './index.css';
 
 function Square(props) {
   return (
-    <button className="square" onClick={props.onClick}>
+    <Button 
+      variant="contained"
+      color="primary"
+      className="square"
+      onClick={props.onClick}
+    >
       {props.value}
-    </button>
+    </Button>
   );
 }
 
